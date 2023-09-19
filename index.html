@@ -96,7 +96,7 @@
                                           .then(response => response.json())
                                           .then(data => {
                                               alert('Thank you! Your email has been successfully submitted.');
-                                              
+                                              emailInput.value = '';
                                           })
                                           .catch(error => {
                                               console.error('Error:', error);
@@ -337,7 +337,8 @@
                               <div class="mt-6 sm:mt-12 sm:mx-auto sm:max-w-lg flex flex-col items-center" data-v-782fc14d=""></div>
                               <ile-root id="ile-4" class="mt-6 sm:mt-12 sm:mx-auto sm:max-w-lg" data-v-app="" hydrated="">
                                  <form onsubmit="submitEmail(event, 'cta-email')" class="grid gap-2 grid-cols-1 sm:w-full sm:flex sm:items-center sm:flex-wrap mt-6 sm:mt-12 sm:mx-auto sm:max-w-lg" data-site-id="eBvb9J1OzFtgzUwhDC2m">
-                                    <label for="cta-email" class="sr-only">Email address</label><input id="cta-email" type="email" class="block w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm focus:border-primary focus:ring-primary focus-visible:ring-primary flex-1" required="" placeholder="Enter your email...">
+                                    <label for="cta-email" class="sr-only">Email address</label>
+                                    <input id="cta-email" type="email" class="block w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm focus:border-primary focus:ring-primary focus-visible:ring-primary flex-1" required="" placeholder="Enter your email...">
                                     <div><button onclick="submitEmail(event, 'cta-email')"  to="" class="ui-button ui-button-base ui-button-primary" type="submit">Submit</button></div>
                                  </form>
                               </ile-root>
